@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
 import com.jxareas.cocktails.adapters.HomePageAdapter
@@ -34,6 +35,7 @@ class HomeViewPagerFragment : Fragment() {
         viewPager.adapter = homeAdapter
         TabLayoutMediator(tabLayout, viewPager) { tab, index ->
             tab.text = getString(homeAdapter.titles.elementAt(index))
+            tab.setIcon(homeAdapter.icons.elementAt(index))
         }.attach()
     }
 

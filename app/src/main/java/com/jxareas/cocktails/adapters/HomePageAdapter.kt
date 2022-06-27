@@ -18,8 +18,11 @@ class HomePageAdapter(
 ) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
 
-    val titles : Set<Int>
+    val titles: Set<Int>
         get() = setOf(R.string.search, R.string.favorites)
+
+    val icons: Set<Int>
+        get() = setOf(R.drawable.search_tab_selector, R.drawable.favorite_tab_selector)
 
     override fun getItemCount(): Int =
         fragments.size

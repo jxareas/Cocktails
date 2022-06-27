@@ -2,8 +2,49 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Cocktails" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!--Material shape attributes-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Cocktails.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.Cocktails.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Cocktails.LargeComponent
+        </item>
+        <!--Material type attributes-->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Cocktails.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Cocktails.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Cocktails.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Cocktails.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Cocktails.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Cocktails.Headline6</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Cocktails.HeadlineSmall
+        </item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Cocktails.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Cocktails.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Cocktails.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Cocktails.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Cocktails.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Cocktails.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Cocktails.Overline</item>
+
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-    <style name="Theme.Cocktails" parent="Base.Theme.Cocktails" />
+    <style name="Cocktails" parent="Base.Theme.Cocktails" />
+
+    <style name="Cocktails.White">
+        <item name="colorPrimary">@color/dark_blue_grey</item>
+        <item name="colorPrimaryVariant">@color/anti_flash_white</item>
+        <item name="colorPrimarySurface">@color/pink_white</item>
+        <item name="colorOnPrimarySurface">@color/white</item>
+        <item name="colorOnPrimary">@color/matte_black</item>
+        <item name="colorSecondary">@color/dark_blue_grey</item>
+        <item name="colorSecondaryVariant">@color/matte_black</item>
+        <item name="colorAccent">@color/arsenic</item>
+        <item name="transitionShapeAppearance">@style/ShapeAppearance.Cocktails.SmallComponent
+        </item>
+    </style>
+
 </resources>

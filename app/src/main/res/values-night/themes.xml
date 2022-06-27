@@ -1,7 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Cocktails" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="Cocktails.White">
+        <item name="colorPrimary">@color/anti_flash_white</item>
+        <item name="colorPrimaryVariant">@color/anti_flash_white</item>
+        <item name="colorPrimarySurface">@color/dark_blue_grey</item>
+        <item name="colorOnPrimarySurface">@color/grey_800</item>
+        <item name="colorOnPrimary">@color/matte_black</item>
+        <item name="colorSecondary">@color/dark_blue_grey</item>
+        <item name="colorSecondaryVariant">@color/matte_black</item>
+        <item name="colorAccent">@color/pink_white</item>
+        <item name="transitionShapeAppearance">@style/ShapeAppearance.Cocktails.SmallComponent
+        </item>
     </style>
 </resources>

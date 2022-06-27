@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="500dp"
     android:layout_marginHorizontal="@dimen/margin_small"
     android:layout_marginTop="@dimen/margin_standard"
     app:cardCornerRadius="20dp"
@@ -21,6 +21,7 @@
             tools:src="@tools:sample/backgrounds/scenic" />
 
         <TextView
+            style="?attr/textAppearanceHeadline5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -28,9 +29,12 @@
             tools:text="@sample/cocktails.json/data/name" />
 
         <TextView
+            style="?attr/textAppearanceBody1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="8"
             android:paddingHorizontal="@dimen/margin_standard"
             android:paddingTop="@dimen/margin_standard"
             android:text="@sample/cocktails.json/data/description" />
