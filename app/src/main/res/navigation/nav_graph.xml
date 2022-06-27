@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/homeViewPagerFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.jxareas.cocktails.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:id="@+id/searchCocktailsFragment"
+        android:name="com.jxareas.cocktails.ui.search.SearchCocktailsFragment"
+        android:label="fragment_search_cocktails"
+        tools:layout="@layout/fragment_search_cocktails" />
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.jxareas.cocktails.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/homeViewPagerFragment"
+        android:name="com.jxareas.cocktails.ui.home.HomeViewPagerFragment"
+        android:label="fragment_home_view_pager"
+        tools:layout="@layout/fragment_home_view_pager" />
+    <fragment
+        android:id="@+id/cocktailDetailsFragment"
+        android:name="com.jxareas.cocktails.ui.details.CocktailDetailsFragment"
+        android:label="fragment_cocktail_details"
+        tools:layout="@layout/fragment_cocktail_details" />
+    <fragment
+        android:id="@+id/favoriteCocktailsFragment"
+        android:name="com.jxareas.cocktails.ui.favorites.FavoriteCocktailsFragment"
+        android:label="fragment_favorite_cocktails"
+        tools:layout="@layout/fragment_favorite_cocktails" />
 </navigation>
