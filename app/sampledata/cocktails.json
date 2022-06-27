@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "name": "Bloody Mary",
+      "description": "Bloody Mary is a cocktail made with vodka, tomato juice, Worcestershire sauce, celery, and tabasco sauce. It is a traditional American-American drink, and is traditionally served as a side dish in a margarita, a cocktail made with tequila, lime juice, and salt."
+    },
+    {
+      "name": "Margarita",
+      "description": "A margarita is a cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with ice, blended with ice, or without ice."
+    }
+  ]
+}
