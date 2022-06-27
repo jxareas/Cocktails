@@ -8,14 +8,17 @@ import com.jxareas.cocktails.data.mappers.toCached
 import com.jxareas.cocktails.data.mappers.toDomain
 import com.jxareas.cocktails.data.repository.CocktailRepository
 import com.jxareas.cocktails.domain.model.Cocktail
+import com.jxareas.cocktails.utils.DispatcherProvider
 import com.jxareas.cocktails.utils.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
-class CocktailRepositoryImpl(
+class CocktailRepositoryImpl @Inject constructor(
     private val cocktailDao: CocktailDao,
     private val favoritesDao: FavoriteCocktailDao,
     private val cocktailService: CocktailService,
+    private val dispatchers: DispatcherProvider
 ) : CocktailRepository {
     override suspend fun getCocktailByName(name: String): Flow<Resource<List<Cocktail>>> = flow {
         emit(getCachedCocktails(name))
