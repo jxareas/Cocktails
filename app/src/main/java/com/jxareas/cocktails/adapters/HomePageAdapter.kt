@@ -15,8 +15,7 @@ class HomePageAdapter(
         SearchCocktailsFragment(),
         FavoriteCocktailsFragment()
     )
-) :
-    FragmentStateAdapter(fragmentManager, lifecycle) {
+) : FragmentStateAdapter(fragmentManager, lifecycle) {
 
     val titles: Set<Int>
         get() = setOf(R.string.search, R.string.favorites)

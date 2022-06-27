@@ -5,6 +5,7 @@ plugins {
     id 'androidx.navigation.safeargs' // Jetpack Navigation SafeArgs
     id 'dagger.hilt.android.plugin' // Dagger Hilt for Dependency Injection
     id 'kotlinx-serialization' // Kotlin Serialization
+    id 'kotlin-parcelize' // Kotlin Parcelize
 }
 
 android {
@@ -39,6 +40,9 @@ android {
 }
 
 dependencies {
+
+    // Modules
+    implementation project(":logging")
 
     // Android Dependencies
     implementation 'androidx.appcompat:appcompat:1.4.2'

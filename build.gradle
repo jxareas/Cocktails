@@ -4,6 +4,7 @@ buildscript {
         // Kotlin Language & SDK Constants
         COMPILE_SDK = 32
         TARGET_SDK = COMPILE_SDK
+        BUILD_TOOLS_VERSION = COMPILE_SDK
         MIN_SDK = 21
         KOTLIN = "1.6.10"
 
