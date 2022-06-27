@@ -1,32 +1,29 @@
 package com.jxareas.cocktails.ui.details
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.jxareas.cocktails.R
+import androidx.fragment.app.Fragment
+import com.jxareas.cocktails.databinding.FragmentCocktailDetailsBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class CocktailDetailsFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = CocktailDetailsFragment()
-    }
-
-    private lateinit var viewModel: CocktailDetailsViewModel
+    private var _binding: FragmentCocktailDetailsBinding? = null
+    private val binding: FragmentCocktailDetailsBinding
+        get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_cocktail_details, container, false)
+    ): View {
+        _binding = FragmentCocktailDetailsBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(CocktailDetailsViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
-
 }

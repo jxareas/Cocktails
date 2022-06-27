@@ -5,4 +5,5 @@
     <dimen name="card_elevation">8dp</dimen>
     <dimen name="card_item_height_standard">200dp</dimen>
     <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_semi">8dp</dimen>
 </resources>

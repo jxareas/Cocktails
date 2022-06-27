@@ -35,7 +35,6 @@
 
     <style name="TextAppearance.Cocktails.HeadlineSmall" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="fontFamily">@font/source_sans_pro_semibold</item>
-        <item name="lineHeight">12sp</item>
     </style>
 
 
@@ -50,7 +49,7 @@
 
     <style name="TextAppearance.Cocktails.Body1" parent="TextAppearance.MaterialComponents.Body1">
         <item name="fontFamily">@font/source_sans_pro</item>
-        <item name="lineHeight">28sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <style name="TextAppearance.Cocktails.Body2" parent="TextAppearance.MaterialComponents.Body2">

@@ -2,18 +2,18 @@ package com.jxareas.cocktails.di
 
 import com.jxareas.cocktails.utils.DefaultDispatchers
 import com.jxareas.cocktails.utils.DispatcherProvider
-import dagger.Binds
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class AppModule {
+object AppModule {
 
-    @Binds
+    @Provides
     @Singleton
-    abstract fun provideDispatchers(dispatcher: DefaultDispatchers): DispatcherProvider
+   fun provideDispatchers(): DispatcherProvider = DefaultDispatchers
 
 }

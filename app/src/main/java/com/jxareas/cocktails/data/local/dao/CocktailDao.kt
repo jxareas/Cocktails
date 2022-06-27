@@ -11,7 +11,7 @@ interface CocktailDao : BaseDao<CachedCocktail> {
     fun getAll(): List<CachedCocktail>
 
     @Query("SELECT * FROM cocktails WHERE name LIKE '%' || :query || '%'")
-    fun getByName(query: String): List<CachedCocktail>
+    suspend fun getByName(query: String): List<CachedCocktail>
 
     @Query("SELECT * FROM cocktails WHERE cocktailId = :id")
     fun getById(id: Int): CachedCocktail?
