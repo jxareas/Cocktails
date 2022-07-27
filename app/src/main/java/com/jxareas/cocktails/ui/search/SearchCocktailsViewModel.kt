@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.jxareas.cocktails.data.repository.CocktailRepository
+import com.jxareas.cocktails.domain.repository.CocktailRepository
 import com.jxareas.cocktails.domain.model.Cocktail
 import com.jxareas.cocktails.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel

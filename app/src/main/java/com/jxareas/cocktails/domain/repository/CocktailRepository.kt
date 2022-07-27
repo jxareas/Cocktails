@@ -1,4 +1,4 @@
-package com.jxareas.cocktails.data.repository
+package com.jxareas.cocktails.domain.repository
 
 import com.jxareas.cocktails.data.local.model.CachedCocktail
 import com.jxareas.cocktails.domain.model.Cocktail
