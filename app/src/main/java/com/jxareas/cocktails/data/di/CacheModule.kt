@@ -1,4 +1,4 @@
-package com.jxareas.cocktails.di
+package com.jxareas.cocktails.data.di
 
 import android.content.Context
 import androidx.room.Room

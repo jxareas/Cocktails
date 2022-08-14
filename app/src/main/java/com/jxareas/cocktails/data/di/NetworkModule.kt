@@ -1,4 +1,4 @@
-package com.jxareas.cocktails.di
+package com.jxareas.cocktails.data.di
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.jxareas.cocktails.data.api.constants.ApiConstants

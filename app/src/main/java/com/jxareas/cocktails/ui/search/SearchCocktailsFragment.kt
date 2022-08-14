@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.jxareas.cocktails.adapters.CocktailsCardAdapter
+import com.jxareas.cocktails.ui.adapters.CocktailsCardAdapter
 import com.jxareas.cocktails.databinding.FragmentSearchCocktailsBinding
 import com.jxareas.cocktails.utils.Resource
 import dagger.hilt.android.AndroidEntryPoint

@@ -1,4 +1,4 @@
-package com.jxareas.cocktails.di
+package com.jxareas.cocktails.data.di
 
 import com.jxareas.cocktails.domain.repository.CocktailRepository
 import com.jxareas.cocktails.data.repository.CocktailRepositoryImpl

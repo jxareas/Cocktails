@@ -1,4 +1,4 @@
-package com.jxareas.cocktails.adapters
+package com.jxareas.cocktails.ui.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

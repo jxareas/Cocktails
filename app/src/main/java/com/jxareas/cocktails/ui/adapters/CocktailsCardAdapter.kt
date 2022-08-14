@@ -1,4 +1,4 @@
-package com.jxareas.cocktails.adapters
+package com.jxareas.cocktails.ui.adapters
 
 
 import android.view.ViewGroup

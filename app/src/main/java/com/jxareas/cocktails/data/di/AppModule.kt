@@ -1,4 +1,4 @@
-package com.jxareas.cocktails.di
+package com.jxareas.cocktails.data.di
 
 import com.jxareas.cocktails.utils.DefaultDispatchers
 import com.jxareas.cocktails.utils.DispatcherProvider

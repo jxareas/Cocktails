@@ -1,4 +1,4 @@
-package com.jxareas.cocktails.adapters
+package com.jxareas.cocktails.ui.adapters
 
 import androidx.recyclerview.widget.DiffUtil
 import com.jxareas.cocktails.domain.model.Cocktail

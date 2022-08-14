@@ -4,10 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
-import com.jxareas.cocktails.adapters.HomePageAdapter
+import com.jxareas.cocktails.ui.adapters.HomePageAdapter
 import com.jxareas.cocktails.databinding.FragmentHomeViewPagerBinding
 
 class HomeViewPagerFragment : Fragment() {
